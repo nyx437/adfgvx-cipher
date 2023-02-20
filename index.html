@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>ADFGVX Cipher</title>
+    </head>
+</html>
+<body>
+    <div>
+        <h1>ADFGVX</h1>
+        <fieldset>
+            <label>Enter the message you wish to encrypt or decrypt:
+                <textarea id="symbols" rows="3" cols="45" placeholder="Message" required>
+                </textarea>
+            </label><br><br><br>
+
+            <label>Select the mode encrypt or decrypt:    
+                <select id="mode">
+                    <option value="encrypt">Encrypt</option>
+                    <option value="decrypt">Decrypt</option>
+                </select>
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <label>Enter grid keyword:
+                <input type="text" id="gridKeyword" required>
+            </label>
+
+            <label>Enter transposition keyword:
+                <input type="text" id="transKeyword" required>
+            </label>
+
+            <label>Select keyword route:
+                <select id="keyWordRoute"></select>
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <label>Press Disco to complete action:<br>
+                <input type="button" value="Disco" id="disco" onclick="adfgvxCipher()">
+            </label>
+        </fieldset>
+        <p id="output"></p>
+    </div>
+    <script src="adfgvxCipher.js"></script>
+</body>
